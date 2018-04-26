@@ -8,6 +8,40 @@
     <version>1.0-SNAPSHOT</version>
     <name>CoolStore Gateway Service</name>
     <description>CoolStore Gateway Service with Spring Boot</description>
+    <repositories>
+        <repository>
+                <id>jboss-maven-repository</id>
+                <name>JBoss Maven Repository</name>
+                <url>http://maven.repository.redhat.com/ga/</url>
+                <layout>default</layout>
+                <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                </releases>
+                <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+                <id>jboss-maven-repository</id>
+                <name>JBoss Maven Repository</name>
+                <url>http://maven.repository.redhat.com/ga/</url>
+                <layout>default</layout>
+                <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                </releases>
+                <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                </snapshots>
+        </pluginRepository>
+	</pluginRepositories>
+
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -15,7 +49,7 @@
         <fabric8.version>2.3.4</fabric8.version>
         <spring.k8s.bom.version>0.2.0.RELEASE</spring.k8s.bom.version>
         <k8s.client.version>2.4.1</k8s.client.version>
-        <fabric8.maven.plugin.version>3.5.32</fabric8.maven.plugin.version>
+        <fabric8.maven.plugin.version>3.5.37</fabric8.maven.plugin.version>
         <postgresql.version>9.4.1212</postgresql.version>
         <netflix.feign.version>8.15.1</netflix.feign.version>
     </properties>
